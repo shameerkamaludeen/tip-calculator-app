@@ -76,7 +76,7 @@ bill.addEventListener('input', () => {
             billError.textContent = 'Bill required';
             billError.classList.add('error');
         } else if (bill.validity.rangeOverflow) {
-            billError.textContent = 'Bill exceeds $100000';
+            billError.textContent = 'Bill exceeds $10000';
             billError.classList.add('error');
         } else if (bill.validity.rangeUnderflow) {
             billError.textContent = 'Bill required';

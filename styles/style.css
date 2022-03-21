@@ -126,7 +126,7 @@ footer {
 
 .section-tips .wrapper-tipcalc {
     background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 3.2em 0;
 }
 
@@ -215,6 +215,7 @@ footer {
 
 .section-tips .wrapper-tips button:hover {
     background-color: #9fe8df;
+    transition: background-color 0.2s;
 }
 
 .section-tips .wrapper-tips button.active {
@@ -260,6 +261,7 @@ footer {
 }
 .section-tips .reset button:hover {
     background-color: #9fe8df;
+    transition: background-color 0.2s;
 }
 
 .section-tips .reset button:active {
@@ -335,6 +337,12 @@ footer {
 
 @media screen and (min-width: 57.5em) {
     
+    /* || Typography */
+
+    .section-tips li .amount span {
+        font-size: 2.5rem;
+    }
+
     /* || Section tip calculator*/
     .section-tips .wrapper-tipcalc {
         padding: 3.2em;
