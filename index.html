@@ -1,44 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/systemize.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <script src="scripts/main.js" defer></script>
 </head>
+
 <body>
+  <main>
+    <h1 class="hide-visually">Frontend Mentor - Tip calculator app solution</h1>
 
-  Bill
+    <div class="section-tips">
+      <h2>spli<br>tter</h2>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      <div class="wrapper-tipcalc">
+        <div class="wrapper-calc">
+          <ul class="bill">
+            <li class="bill-amount">
+              <div class="wrapper-label-error">
+                <label for="bill">Bill</label><span class="bill-error"></span>
+              </div>
+              <input type="number" name="bill" id="bill" min="1" max="100000" placeholder="0" required step="any">
+              <img src="images/icon-dollar.svg" alt="Dollar icon">
+            </li>
 
-  Number of People
+            <li class="tips">
+              <label for="customTip">Select Tip %</label>
+              <div class="wrapper-tips">
+                <button>5%</button>
+                <button>10%</button>
+                <button>15%</button>
+                <button>25%</button>
+                <button>50%</button>
+                <input type="number" name="custom_top" id="customTip" min="1" max="100" placeholder="Custom">
+              </div>
+            </li>
 
-  Tip Amount
-  / person
+            <li>
+              <div class="wrapper-label-error">
+                <label for="people">Number of People</label><span class="people-error"></span>
+              </div>
+              <input type="number" name="people" id="people" min="1" placeholder="0" required>
+              <img src="images/icon-person.svg" alt="Person icon">
+            </li>
+          </ul>
+        </div>
 
-  Total
-  / person
+        <div class="wrapper-total">
+          <ul>
+            <li class="tip-amount">
+              <div class="label">
+                <span>Tip Amount</span>
+                <span>/ person</span>
+              </div>
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+              <div class="amount"><span>$0.00</span></div>
+            </li>
+
+            <li class="total-amount">
+              <div class="label">
+                <span>Total</span>
+                <span>/ person</span>
+              </div>
+
+              <div class="amount"><span>$0.00</span></div>
+            </li>
+
+            <li class="reset">
+              <button disabled>Reset</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://twitter.com/ShameerKamalud1">Shameer Kamaludeen</a>.
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>

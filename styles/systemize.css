@@ -1,0 +1,50 @@
+/* || General style rules */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* This as the class implies hide the lement visually */
+.hide-visually {
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute!important;
+    border: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+    clip: rect(1px,1px,1px,1px);
+  }
+
+/* || Typography */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4, h5, h6, p, li, th, td, img {
+    line-height: 1.5;
+}
+
+figcaption, time {
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
