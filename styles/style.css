@@ -1,0 +1,356 @@
+/* || Typography */
+
+body {
+    letter-spacing: 0.2px;
+    word-spacing: 0.8px;
+    font-weight: 400;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+.section-tips h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    letter-spacing: 12px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.section-tips li label, 
+.section-tips .wrapper-label-error .error, 
+.section-tips li .label span:first-child {
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+.section-tips .wrapper-label-error span {
+    visibility: hidden;
+}
+
+.section-tips .wrapper-label-error span.error {
+    visibility: visible;
+    color: #e55e30;
+}
+
+.section-tips li label {
+    color: hsl(186, 14%, 43%);
+}
+
+.section-tips li > input {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+}
+.section-tips li > input::placeholder {
+    color: hsl(186, 30%, 74%);
+}
+
+.section-tips .wrapper-tips button, 
+.section-tips .wrapper-tips input {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.section-tips .wrapper-tips button {
+    color: hsl(0, 0%, 100%);
+}
+
+.section-tips .wrapper-tips input {
+    color: hsl(183, 100%, 15%);
+}
+
+.section-tips li .label span:first-child {
+    color: hsl(189, 41%, 97%);
+    line-height: 1;
+}
+
+.section-tips li .label span:last-child {
+    color: hsl(184, 14%, 56%);
+    line-height: 1;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: initial;
+    word-spacing: initial;
+}
+
+.section-tips li .amount span {
+    font-size: 2rem;
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.section-tips .reset button {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(183, 100%, 15%);
+}
+
+/* || Layout */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    flex: 0;
+}
+
+/* || Section tips calculator */
+
+.section-tips {
+    margin: 0 auto 3.2em;
+    max-width: 42.5em;
+}
+
+.section-tips h2 {
+    margin: 2em 0 1.5em;
+}
+
+.section-tips .wrapper-tipcalc {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 3.2em 0;
+}
+
+.section-tips ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-tips .wrapper-calc {
+    padding: 0 3.2em;
+    margin-bottom: 3.2em;
+}
+
+.section-tips .wrapper-label-error, 
+.section-tips li .label span:first-child {
+    margin-bottom: 0.5em;
+}
+
+.section-tips li.tips label {
+    margin-bottom: 1.2em;
+}
+
+.section-tips li.tips label, 
+.section-tips .wrapper-total li span {
+    display: block;
+}
+
+.section-tips .wrapper-label-error { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-tips li:not(:last-child) {
+    margin-bottom: 4em;
+}
+
+.section-tips input {
+    border: 2px solid hsl(189, 41%, 97%);
+    background-color: hsl(189, 41%, 97%);
+    outline: none;
+    border-radius: 5px;
+}
+
+.section-tips input:focus, 
+.section-tips input:hover {
+    border-color: hsl(172, 67%, 45%);
+}
+
+.section-tips input.invalid {
+    border-color: #e55e30;
+}
+
+.section-tips li > input {
+    width: 100%;
+    padding: 0.342em 0.75em;
+}
+
+.section-tips .wrapper-calc li:nth-of-type(2n+1) {
+    position: relative;
+}
+
+.section-tips .wrapper-calc li:nth-of-type(2n+1) img {
+    position: absolute;
+    left: 1.75em;
+    top: 4.5em;
+}
+
+.section-tips .wrapper-tips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+.section-tips .wrapper-tips > * {
+    padding: 0.591em;
+    line-height: 1;
+}
+
+.section-tips .wrapper-tips button {
+    background-color: hsl(183, 100%, 15%);
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+}
+
+.section-tips .wrapper-tips button:hover {
+    background-color: #9fe8df;
+}
+
+.section-tips .wrapper-tips button.active {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.section-tips .wrapper-tips input {
+    text-align: right;
+    width: 100%;
+    height: 2.182em;
+}
+
+.section-tips .wrapper-tips input::placeholder {
+    text-align: center;
+    color: hsl(186, 14%, 43%);
+}
+
+.section-tips .wrapper-total {
+    background-color: hsl(183, 100%, 15%);
+    margin: 0 2.4em;
+    border-radius: 15px;
+    padding: 2.4em;
+}
+
+.section-tips .wrapper-total .tip-amount {
+    margin-top: 2em;
+}
+
+.section-tips .wrapper-total li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-tips .reset button {
+    outline: none;
+    background-color: hsl(172, 67%, 45%);
+    border: 0;
+    padding: 0.65em 0;
+    width: 100%;
+    border-radius: 5px;
+}
+.section-tips .reset button:hover {
+    background-color: #9fe8df;
+}
+
+.section-tips .reset button:active {
+    background-color: hsl(173, 61%, 77%);
+}
+
+.section-tips .reset button:disabled {
+    background-color: #0d686d;
+}
+
+/* || Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 50em) {
+    
+    /* || Typography */
+
+    .section-tips h2 {
+        margin-bottom: 3.542em;
+    }
+
+    /* || Section tip calculator*/
+
+    .section-tips {
+        max-width: 92.3em;
+        width: 97%;
+    }
+
+    .section-tips .wrapper-tipcalc {
+        display: flex;
+    }
+    .section-tips .wrapper-calc {
+        flex: 1;
+        margin-bottom: 1.6em;
+    }
+
+    .section-tips .wrapper-total {
+        flex: 1;
+        margin-left: 0;
+    }
+
+    .section-tips .wrapper-total ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .section-tips .wrapper-total .reset {
+        margin-top: auto;
+    }
+}
+
+@media screen and (min-width: 53em) {
+    
+    /* || Section tip calculator*/
+    .section-tips .wrapper-total {
+        padding: 0;
+    }
+
+    .section-tips .wrapper-total ul {
+        height: calc(100% - 9em);
+        margin: 4.5em;
+    }
+}
+
+@media screen and (min-width: 57.5em) {
+    
+    /* || Section tip calculator*/
+    .section-tips .wrapper-tipcalc {
+        padding: 3.2em;
+    }
+
+    .section-tips .wrapper-calc {
+        padding: 0 5em 0 1.8em;
+    }
+
+    .section-tips .wrapper-total {
+        margin-right: 0;
+    }
+
+    .section-tips .wrapper-tips {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em;
+    }
+}
